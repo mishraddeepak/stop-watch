@@ -1,7 +1,9 @@
 //Selecting all the counters
 var counter = document.querySelectorAll('.counter');
 // Selecting the audio
-var audio=document.getElementById('audi')
+var startAud=document.getElementById('start-aud');
+var stopAud=document.getElementById('stop-aud');
+var resetAud=document.getElementById('reset-aud');
 //Selecting all the buttons
 var buttons = document.querySelectorAll('.buttons');
 for (let i = 0; i < buttons.length; i++) {
@@ -74,6 +76,7 @@ function counterStart() {
     buttons[0].disabled = true;
     buttons[1].disabled = false;
     buttons[2].disabled = false;
+    startAud.play()
     startInterval();
 };
 //Function to stop the stopwatch
@@ -82,6 +85,7 @@ function counterStop() {
     buttons[1].disabled = true;
     buttons[0].disabled = false;
     buttons[2].disabled = false;
+    stopAud.play()
 }
 //Function to Reset the watch
 function counterReset() {
@@ -96,6 +100,6 @@ function counterReset() {
     counter[1].innerHTML = '00';
     counter[2].innerHTML = '00';
     counter[3].innerHTML = '000';
-    audio.ariaCurrent=0;
-    audio.play()
+    
+    resetAud.play()
 };
