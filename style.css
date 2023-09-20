@@ -1,0 +1,87 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+#container {
+  width: 100vw;
+  height: 100vh;
+  background-color: gray;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+}
+#scroll {
+  width: 90vw;
+  position: relative;
+  bottom: 100px;
+  font-size: 1.7rem;
+  background-color: rgb(111, 128, 85);
+}
+#stopwatch-head {
+  display: inline-block;
+  padding-bottom: 27px;
+  font-size: 2.8rem;
+  font-weight: bolder;
+  font-family: "Courier New", Courier, monospace;
+}
+#watch-container {
+  width: auto;
+  height: auto;
+  box-shadow: 50px 50px 100px rgba(0, 0, 0, 0.5);
+}
+
+#display {
+  width: 250px;
+  height: 70px;
+  display: flex;
+  color: white;
+  background-color: #16111f;
+  border: none;
+  box-shadow: 6px 6px rgb(183, 177, 177);
+  justify-content: space-around;
+  display: flex;
+  border-radius: 18px;
+}
+
+.counter {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 3rem;
+  border-radius: 20px;
+  background-color: #0b080f;
+}
+.separator {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2.6rem;
+}
+#buttons {
+  margin-top: 15px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.buttons {
+  padding: 5px;
+  width: 75px;
+  height: 40px;
+  box-shadow: 7px 7px 7px rgb(211, 201, 201);
+  border-radius: 10px;
+  outline: none;
+  border-color: rgb(4, 248, 166);
+  font-size: 1.2rem;
+  color: white;
+}
+#start {
+  background: rgb(20, 151, 20);
+}
+#stop {
+  background-color: rgb(186, 30, 30);
+}
+#reset {
+  background-color: rgb(45, 45, 171);
+}
